@@ -126,4 +126,10 @@ Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
 
 `a[i][j] = (i*N+j)*size_of_each_element+Base_Address`
 
-**Size of Matrix for Column-Major Order and index starts from zero**
+![](https://i.imgur.com/1y2wxsM.png)
+
+### What is the address of any index in Column-Major Order Array?
+
+![](https://i.imgur.com/fBsEbr7.png)
+
+
