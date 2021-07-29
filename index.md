@@ -34,6 +34,20 @@ Do 50 questions on below data structures. Do 70 questions on Array and Linked Li
 - Tree
 - Graph
 
+### Linear Storage
+
+- Array
+- Link List
+- Stack
+- Queue
+
+### Non Linear Storage
+
+- Tree
+- Graph
+
+If you get some problem and want to solve that. You will write some code step by step. That is called algorithm.
+
 ## Which Algorithm Problem Should I Do?
 
 Most of the companies ask DP problems, they are very important.
@@ -87,3 +101,29 @@ Moving bit/s towards the left side in binary number.
 `4<<2 == 0`
 
 `x<<y` means `x*2^y` multiply x by 2 to the power of y.
+
+## Time Complexity
+
+Within a `1 second` normally `10^8` loop can run. If your solution is trying to run more than 10^8 loops within a second. You need to optimize your solution to bring it within a range.
+
+## Array Data Structure
+
+### How to find the address of 1 dimensional array to do random access?
+
+`a[i] = (i*size_of_each_element) + Base_Address`
+
+![](https://i.imgur.com/vFiJyEA.png)
+
+### How to find the address of any index in Row-Major Order Array?
+
+2-D Array Matrix example 3x3 Matrix below:
+
+![](https://i.imgur.com/dEJkxTJ.png)
+
+Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
+
+![](https://i.imgur.com/FutGvQV.png)
+
+`a[i][j] = (i*N+j)*size_of_each_element+Base_Address`
+
+**Size of Matrix for Column-Major Order and index starts from zero**
