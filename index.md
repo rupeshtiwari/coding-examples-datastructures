@@ -135,3 +135,8 @@ Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
 ![](https://i.imgur.com/EOkmMrS.png)
 
 
+### Array Interview Questions
+
+**School Level Array Questions** 
+
+- [Reverse the array](https://practice.geeksforgeeks.org/problems/reverse-an-array/0/?category[]=Arrays&category[]=Arrays&difficulty[]=-2&page=1&query=category[]Arraysdifficulty[]-2page1category[]Arrays) 
