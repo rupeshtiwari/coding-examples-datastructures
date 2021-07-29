@@ -25,7 +25,7 @@ Every day you do 2 basic, 2 medium and 1 hard problem per data structure
 
 ## Which Data Structure Problem Should I Focus and solve?
 
-Do 50 questions on below data structures. Do 70 questions on Array and Linked List. First solve the problems which are described in the [data structure in hindi videos](https://www.youtube.com/watch?v=t5JfBFfi2sU&list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb&index=1). Then solve others on your own. If you dont watch videos and try to solve your own in Geek of Geeks you will solve 5 problems. However, if you watch videos and solve them then you should be able to solve 15 problems on your own. Do below Data Structure:
+Do 50 questions on below data structures. Do 70 questions on Array and Linked List. First solve the problems which are described in the [data structure in Hindi videos](https://www.youtube.com/watch?v=t5JfBFfi2sU&list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb&index=1). Then solve others on your own. If you don't watch videos and try to solve your own in Geek of Geeks you will solve 5 problems. However, if you watch videos and solve them then you should be able to solve 15 problems on your own. Do below Data Structure:
 
 - Array
 - Link List
