@@ -132,4 +132,6 @@ Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
 
 ![](https://i.imgur.com/fBsEbr7.png)
 
+![](https://i.imgur.com/EOkmMrS.png)
+
 
