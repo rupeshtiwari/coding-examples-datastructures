@@ -9,6 +9,10 @@
 
 ![](https://i.imgur.com/vjbsHNw.png)
 
+### 2020 GATE problem
+
+![](https://i.imgur.com/5D3Muqx.png)
+
 ## Bitwise operation in JavaScript 
 
 ### Right Shift x>>y 
@@ -24,3 +28,5 @@ Moving bit/s towards the left side in binary number.
 `4<<2 == 0` 
 
 `x<<y` means `x*2^y` multiply x by 2 to the power of y.
+
+
