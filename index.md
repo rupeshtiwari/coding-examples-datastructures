@@ -1,4 +1,4 @@
-# Data Structure Coding
+# Data Structure & Algorithm Programming & problem solving  
 
 ## You have 17 yrs of full stack coding experience still solve School level DS & Algorithm problems!
 
