@@ -1,4 +1,4 @@
-# Data Structure & Algorithm Programming & problem solving
+# Data Structure Programming & problem solving
 
 ## You have 17 yrs of full stack coding experience still solve School level DS & Algorithm problems!
 
@@ -89,6 +89,54 @@ Every month 3 competitions run
 - **Long Challenge**: Within 10 days you have to solve problems
 - **Cook Off **
 - **Lunch Time**: Within 2-3 hours solve problems
+
+## Recursion
+
+Since I have done coding from last 17 years. I was told recursion is not good in terms of performance. Since it allocate stack of frames for each recursion call. Also it clones the function every time it is called with every parameter values or references. Therefore, I decided to not learn or not solve any problems using recursion rather do via iterative programming. Which is all correct. However this mentality stopped me to learn the in-depth knowledge of recursion. Therefore, now I am learning the basics of recursion from the beginning. Once I learn them then I can decide should I apply recursion or not in order to keep performance high. However, I should still learn recursion.
+
+Recursion types are: Direct, Indirect, Non-Tail and Tail.
+
+### Direct Recursion
+
+A function that calls itself repetitively. Like Factorial function.
+
+### Indirect Recursion
+
+A function that calls some other function repetitively.
+
+### Non-Tail Recursion
+
+In traditional recursion, the typical model is that you perform your recursive calls first, and then you take the return value of the recursive call and calculate the result. In this manner, you don't get the result of your calculation until you have returned from every recursive call.
+
+Example of `non-tail recursion` calculate **factorial**:
+
+```js
+function factorial(n) {
+  if (n == 0) return 1;
+
+  return n * factorial(n - 1);
+}
+```
+
+![](https://i.imgur.com/W1cFspu.png)
+
+### Tail Recursion
+
+In **tail recursion**, you perform your calculations first, and then you execute the recursive call, passing the results of your current step to the next recursive step. This results in the last statement being in the form of `(return (recursive-function params))`. **Basically, the return value of any given recursive step is the same as the return value of the next recursive call.**
+
+The consequence of this is that once you are ready to perform your next recursive step, you don't need the current stack frame any more. This allows for some optimization.
+
+Example of `tail recursion` calculate **factorial**:
+
+```js
+function factorial(n) {
+  if (n == 0) return n;
+
+  return factorial(n - 1);
+}
+```
+
+_Python interpreters don't support [tail call optimization](https://stackoverflow.com/questions/310974/what-is-tail-call-optimization). However, while tail call optimization is [part of the ECMAScript 2015 spec](https://www.ecma-international.org/ecma-262/6.0/#sec-tail-position-calls), most JavaScript interpreters [don't support it](https://kangax.github.io/compat-table/es6/#test-proper_tail_calls_(tail*call_optimisation)).*
 
 ## India GATE exam Data Structure Coding Problems
 
