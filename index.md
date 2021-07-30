@@ -138,7 +138,7 @@ function factorial(n) {
 
 _Python interpreters don't support [tail call optimization](https://stackoverflow.com/questions/310974/what-is-tail-call-optimization). However, while tail call optimization is [part of the ECMAScript 2015 spec](https://www.ecma-international.org/ecma-262/6.0/#sec-tail-position-calls), most JavaScript interpreters [don't support it](https://kangax.github.io/compat-table/es6/#test-proper_tail_calls_(tail*call_optimisation)).*
 
-## India GATE exam Data Structure Coding Problems
+## India GATE exam Recursion Coding Problems
 
 ### 2016 GATE problem
 
@@ -170,7 +170,7 @@ Moving bit/s towards the left side in binary number.
 
 Within a `1 second` normally `10^8` loop can run. If your solution is trying to run more than 10^8 loops within a second. You need to optimize your solution to bring it within a range.
 
-## Array Data Structure
+## Array Basic Problems 
 
 ### How to find the address of 1 dimensional array to do random access?
 
@@ -203,3 +203,4 @@ Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
 **School Level Array Questions**
 
 - [Reverse the array](https://practice.geeksforgeeks.org/problems/reverse-an-array/0/?category[]=Arrays&category[]=Arrays&difficulty[]=-2&page=1&query=category[]Arraysdifficulty[]-2page1category[]Arrays)
+- [Rotate the array](https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements/0)

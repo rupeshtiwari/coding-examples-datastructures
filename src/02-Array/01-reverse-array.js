@@ -1,9 +1,15 @@
 class ReverseAnArray {
+  /**
+   * Using Swap and Two pointer method
+   * O(n) time| O(1) space
+   * @param {*} array
+   * @returns
+   */
   execute(array) {
     let low = 0;
     let high = array.length - 1;
 
-    while (low < high) {
+    while (low <= high) {
       const temp = array[high];
       array[high] = array[low];
       array[low] = temp;
