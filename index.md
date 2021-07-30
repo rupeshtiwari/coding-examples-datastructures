@@ -1,17 +1,24 @@
-# Data Structure & Algorithm Programming & problem solving  
+# Data Structure & Algorithm Programming & problem solving
 
 ## You have 17 yrs of full stack coding experience still solve School level DS & Algorithm problems!
 
-The most important thing you need in the journey of cracking Big-4 companies is true confidence. When I started I had 17 years of coding experience with Angular Development, Asp.net C#, full stack coding etc. So I had over confident that I can solve directly competitive programming problems. This is not a true confidence. This type of confidence will help you for few days then you will stop since you will not be able to solve many problems. 
+The most important thing you need in the journey of cracking Big-4 companies is true confidence. When I started I had 17 years of coding experience with Angular Development, Asp.net C#, full stack coding etc. So I had over confident that I can solve directly competitive programming problems. This is not a true confidence. This type of confidence will help you for few days then you will stop since you will not be able to solve many problems.
 
-I am from non-computer background when in some problem people say knap-sack, back tracing, DP, two-pointers etc. I don't used to understand anything out of it. Therefore, I could not solve competitive programming and you can not remember problems if you really want to crack coding interview. 
+I am from non-computer background when in some problem people say knap-sack, back tracing, DP, two-pointers etc. I don't used to understand anything out of it. Therefore, I could not solve competitive programming and you can not remember problems if you really want to crack coding interview.
 
-Therefore, I would ask you if you are also like me non-computer science engineer and having 17 years of full stack development background. Still start solving Data Structure and Algorithm problems from `SCHOOL` level first. Yes I am not kidding. Like I said you need true confidence. And I will assure you if you start solving some problems that you can solve and you will get confidence slowly to solve higher difficulty levels like `BASIC`, `MEDIUM` etc. 
+Therefore, I would ask you if you are also like me non-computer science engineer and having 17 years of full stack development background. Still start solving `Data Structure and Algorithm` problems from `SCHOOL` level first. Yes I am not kidding. Like I said you need true confidence. And I will assure you if you start solving some problems that you can solve and you will get confidence slowly to solve higher difficulty levels like `BASIC`, `MEDIUM` etc.
 
+Therefore, here is the plan I am going to follow. I will assume, I don't know any coding and I am going to start from the beginning.
+
+## What plan I have to learn coding?
+
+I will try to choose some book that I can understand. I know many people says Algorithm Manual/Design books are great. However, my truth is I could not understand those books✋. I have to find out some book for DS and Algorithm and learn basics. Then I will solve school level problems. Then I will slowing go solving higher level problems. After I finish DS & Algorithms then I will start attempting Competitive Programming problems.
 
 ## Which Language should I use in a coding interview?
 
 Many companies don’t prefer Python in coding interviews. Because, it has an in-built library for stack or so on. If you are doing Python then learn one more language in backup ( C#, C, C++ or Java ). Python is mostly used in Data Science and Machine Learning since these topics are very complex and you must write less code to solve these big problems.
+
+I am going to use JavaScript for coding interview. I am not `node.js` expert. Therefore, for server side concepts I will use `C# language`. Since from last 17 years I have been coding in `Asp.net C#`.
 
 ## Where should I practice for DS and Algorithm problems?
 
@@ -143,9 +150,8 @@ Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
 
 ![](https://i.imgur.com/EOkmMrS.png)
 
-
 ### Array Interview Questions
 
-**School Level Array Questions** 
+**School Level Array Questions**
 
-- [Reverse the array](https://practice.geeksforgeeks.org/problems/reverse-an-array/0/?category[]=Arrays&category[]=Arrays&difficulty[]=-2&page=1&query=category[]Arraysdifficulty[]-2page1category[]Arrays) 
+- [Reverse the array](https://practice.geeksforgeeks.org/problems/reverse-an-array/0/?category[]=Arrays&category[]=Arrays&difficulty[]=-2&page=1&query=category[]Arraysdifficulty[]-2page1category[]Arrays)
