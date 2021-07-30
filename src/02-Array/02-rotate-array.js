@@ -1,5 +1,7 @@
 /**
+ * https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements/0#
  * Rotate the array clockwise.
+ * Difficulty: BASIC
  * @param {number[]} arr
  * @param {number} n
  * @returns {void}

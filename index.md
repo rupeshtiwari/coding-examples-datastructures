@@ -14,6 +14,8 @@ Therefore, here is the plan I am going to follow. I will assume, I don't know an
 
 I will try to choose some book that I can understand. I know many people says Algorithm Manual/Design books are great. However, my truth is I could not understand those books✋. I have to find out some book for DS and Algorithm and learn basics. Then I will solve school level problems. Then I will slowing go solving higher level problems. After I finish DS & Algorithms then I will start attempting Competitive Programming problems.
 
+>Goal is to do 6 Questions per day. 3 easy, 2 medium and 1 hard.
+
 ## Which Language should I use in a coding interview?
 
 Many companies don’t prefer Python in coding interviews. Because, it has an in-built library for stack or so on. If you are doing Python then learn one more language in backup ( C#, C, C++ or Java ). Python is mostly used in Data Science and Machine Learning since these topics are very complex and you must write less code to solve these big problems.
@@ -170,7 +172,7 @@ Moving bit/s towards the left side in binary number.
 
 Within a `1 second` normally `10^8` loop can run. If your solution is trying to run more than 10^8 loops within a second. You need to optimize your solution to bring it within a range.
 
-## Array Basic Problems 
+## Array Basic Problems
 
 ### How to find the address of 1 dimensional array to do random access?
 
@@ -200,7 +202,4 @@ Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
 
 ### Array Interview Questions
 
-**School Level Array Questions**
-
-- [Reverse the array](https://practice.geeksforgeeks.org/problems/reverse-an-array/0/?category[]=Arrays&category[]=Arrays&difficulty[]=-2&page=1&query=category[]Arraysdifficulty[]-2page1category[]Arrays)
-- [Rotate the array](https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements/0)
+[Important array problems](./src/02-array)
