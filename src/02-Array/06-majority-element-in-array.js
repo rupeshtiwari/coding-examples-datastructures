@@ -5,14 +5,12 @@
  *
  */
 class MajorityElement {
-
-
   /**
    * O(n) time | O(1) space
-   * @param {*} array 
-   * @param {*} n 
-   * @returns 
-   */  
+   * @param {*} array
+   * @param {*} n
+   * @returns
+   */
   executeWith_MooresVotingAlgorithm(array, n) {
     n = array.length;
     let candidate = findCandidate();
@@ -20,20 +18,22 @@ class MajorityElement {
     return isMajority(candidate) ? candidate : -1;
 
     function findCandidate() {
-      let current = null;
-      let freq = 0;
-      for (let i = 0; i < n; i++) {
-        if (current == null) current = array[i];
-        if (array[i] === current) {
-          freq++;
+      let majorityIndex = 0;
+      let count = 1;
+      for (let i = 1; i < n; i++) {
+        if (array[majorityIndex] === array[i]) {
+          count++;
         } else {
-          freq--;
+          count--;
         }
 
-        if (freq === 0) current = null;
+        if (count === 0) {
+          majorityIndex = i;
+          count = 1;
+        }
       }
 
-      return current;
+      return array[majorityIndex];
     }
 
     function isMajority(candiate) {
