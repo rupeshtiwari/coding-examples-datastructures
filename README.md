@@ -17,7 +17,7 @@ I am using Karma and Jasmin to run the project.
 ## Create new spec from template
 
 ```cmd
-copy _draft/spec.template.js src/02-array/chocolate-problem.js
+copy _draft/spec.template.js src/02-array/08-rain-water-harvesting.js
 ```
 
 
