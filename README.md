@@ -14,6 +14,12 @@ I am using Karma and Jasmin to run the project.
 - Run `npm ci` (This will install test runner)
 - Run `npm test` This will run all test in this repo.
 
+## Create new spec from template
+
+```cmd
+copy _draft/spec.template.js src/02-array/chocolate-problem.js
+```
+
 
 Thanks, 
 Rupesh Tiwari
