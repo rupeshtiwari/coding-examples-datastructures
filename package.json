@@ -5,7 +5,8 @@
   "main": "karma.conf.js",
   "scripts": {
     "test": "karma start",
-    "test:once": "karma start --single-run --browsers ChromeHeadless karma.conf.js"
+    "test:once": "karma start --single-run --browsers ChromeHeadless karma.conf.js",
+    "start": "npm test"
   },
   "repository": {
     "type": "git",
