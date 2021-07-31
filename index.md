@@ -202,4 +202,4 @@ Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
 
 ### Array Interview Questions
 
-[Important array problems](./src/02-Array/)
+[Important array problems](./src/02-Array/01-reverse-array.js)
