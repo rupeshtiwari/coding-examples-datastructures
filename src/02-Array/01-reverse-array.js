@@ -25,7 +25,7 @@ class ReverseAnArray {
   }
 }
 
-describe('Reverse an Array', () => {
+describe('@Arrays: Reverse an Array', () => {
   it('Problem #1', () => {
     var start = performance.now();
     expect(new ReverseAnArray().execute([1, 2, 3, 4])).toEqual([4, 3, 2, 1]);

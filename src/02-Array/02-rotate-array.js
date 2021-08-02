@@ -58,7 +58,7 @@ class Rotate {
     }
   }
 }
-describe('Rotate an Array', () => {
+describe('@Arrays: Rotate an Array', () => {
   it('Problem #1', () => {
     var start = performance.now();
     expect(new Rotate().execute1([1, 2, 3, 4, 5], 2)).toEqual([3, 4, 5, 1, 2]);
@@ -76,7 +76,7 @@ describe('Rotate an Array', () => {
   });
 });
 
-describe('Rotate an Array Optimized', () => {
+describe('@Arrays: Rotate an Array Optimized', () => {
   it('Problem #1', () => {
     var start = performance.now();
     expect(new Rotate().execute([1, 2, 3, 4, 5], 2)).toEqual([3, 4, 5, 1, 2]);

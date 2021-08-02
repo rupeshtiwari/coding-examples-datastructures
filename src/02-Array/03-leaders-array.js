@@ -53,7 +53,7 @@ class LeadersInArray {
   }
 }
 
-describe('Leaders in an Array Brute Force', () => {
+describe('@Arrays: Leaders in an Array Brute Force', () => {
   it('Problem #1', () => {
     var start = performance.now();
     expect(new LeadersInArray().execute1([1, 2, 3, 4, 0])).toEqual([4, 0]);
@@ -71,7 +71,7 @@ describe('Leaders in an Array Brute Force', () => {
   });
 });
 
-describe('Leaders in an Array Optimized', () => {
+describe('@Arrays: Leaders in an Array Optimized', () => {
   it('Problem #1', () => {
     var start = performance.now();
     expect(new LeadersInArray().execute([1, 2, 3, 4, 0])).toEqual([4, 0]);

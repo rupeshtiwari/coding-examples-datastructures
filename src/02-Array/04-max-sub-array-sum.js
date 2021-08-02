@@ -22,7 +22,7 @@ class MaximumSubArraySum {
   }
 }
 
-describe("@Algorithms | Kadane's Algorithm", () => {
+describe("@Arrays: @Algorithms | Kadane's Algorithm", () => {
   it('Problem #1', () => {
     var start = performance.now();
     expect(new MaximumSubArraySum().execute([1, 2, 3, -2, 5])).toEqual(9);

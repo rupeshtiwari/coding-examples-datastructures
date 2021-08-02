@@ -35,7 +35,7 @@ class PairSumProblem {
   }
 }
 
-describe('Key Pair | Pair Sum Problem', () => {
+describe('@Arrays: Key Pair | Pair Sum Problem', () => {
   it('Problem #1', () => {
     var start = performance.now();
     expect(

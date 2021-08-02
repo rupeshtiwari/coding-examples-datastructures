@@ -38,7 +38,7 @@ class RainWaterHarvesting {
   }
 }
 
-describe('Rain Water Harvesting', () => {
+describe('@Arrays: Rain Water Harvesting', () => {
   it('Problem #1', () => {
     var start = performance.now();
     expect(new RainWaterHarvesting().execute([3, 0, 0, 2, 0, 4])).toEqual(10);

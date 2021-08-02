@@ -72,7 +72,7 @@ class MajorityElement {
   }
 }
 
-describe('Majority Element in Array', () => {
+describe('@Arrays: Majority Element in Array', () => {
   it('Problem #1', () => {
     var start = performance.now();
     expect(new MajorityElement().execute([1, 2, 4, 2, 3, 2, 2])).toEqual(2);

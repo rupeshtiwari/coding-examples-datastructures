@@ -30,7 +30,7 @@ class ChocolateProblem {
   }
 }
 
-describe('Solution', () => {
+describe('@Arrays: Chocolate Problem', () => {
   it('Problem #1', () => {
     var start = performance.now();
     expect(
