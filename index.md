@@ -14,7 +14,7 @@ Therefore, here is the plan I am going to follow. I will assume, I don't know an
 
 I will try to choose some book that I can understand. I know many people says Algorithm Manual/Design books are great. However, my truth is I could not understand those books✋. I have to find out some book for DS and Algorithm and learn basics. Then I will solve school level problems. Then I will slowing go solving higher level problems. After I finish DS & Algorithms then I will start attempting Competitive Programming problems.
 
->Goal is to do 6 Questions per day. 3 easy, 2 medium and 1 hard.
+> Goal is to do 6 Questions per day. 3 easy, 2 medium and 1 hard.
 
 ## Which Language should I use in a coding interview?
 
@@ -203,3 +203,14 @@ Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
 ### Array Interview Questions
 
 [Important array problems](./src/02-Array/01-reverse-array.js)
+
+| problem                                                           | logic                                                                                                                                                |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Reverse](src/02-Array/01-reverse-array.js)                       | 2 pointer + swap                                                                                                                                     |
+| [Rotate](src/02-Array/02-rotate-array.js)                         | 3 times reverse                                                                                                                                      |
+| [Leaders](src/02-Array/03-leaders-array.js)                       | Iterate from back, compare with Max.                                                                                                                 |
+| [Max Sub Array Sum](src/02-Array/04-max-sub-array-sum.js)         | Kadane's Algorithm                                                                                                                                   |
+| [Pair Sum in Sorted Array](src/02-Array/05-pair-sum-array.js)     | 2 Pointer, Calculate sum, Move higher or lower after comparing sum                                                                                   |
+| [Majority Element](src/02-Array/06-majority-element-in-array.js)  | Moore's Algorithm                                                                                                                                    |
+| [Chocolate Problem](src/02-Array/07-chocolate-problem.js)         | Sort the array, then find min difference between first and last package.                                                                             |
+| [Rain Water Harvesting](src/02-Array/08-rain-water-harvesting.js) | Create Max size building array from left, create max size building array from right, at any building do (Min(left,right) - Size_of_Current Building) |
