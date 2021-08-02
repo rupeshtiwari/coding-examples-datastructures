@@ -1,4 +1,32 @@
-# Data Structure Programming & problem solving
+## Data Structure Programming & problem solving
+
+- [Data Structure Programming & problem solving](#data-structure-programming--problem-solving)
+- [You have 17 yrs of full stack coding experience still solve School level DS & Algorithm problems!](#you-have-17-yrs-of-full-stack-coding-experience-still-solve-school-level-ds--algorithm-problems)
+- [What plan I have to learn coding?](#what-plan-i-have-to-learn-coding)
+- [Which Language should I use in a coding interview?](#which-language-should-i-use-in-a-coding-interview)
+- [Where should I practice for DS and Algorithm problems?](#where-should-i-practice-for-ds-and-algorithm-problems)
+- [Which Data Structure Problem Should I Focus and solve?](#which-data-structure-problem-should-i-focus-and-solve)
+  - [Linear Storage](#linear-storage)
+  - [Non Linear Storage](#non-linear-storage)
+- [Which Algorithm Problem Should I Do?](#which-algorithm-problem-should-i-do)
+- [From where should I practice Competitive Programming Problems?](#from-where-should-i-practice-competitive-programming-problems)
+- [Recursion](#recursion)
+  - [Direct Recursion](#direct-recursion)
+  - [Indirect Recursion](#indirect-recursion)
+  - [Non-Tail Recursion](#non-tail-recursion)
+  - [Tail Recursion](#tail-recursion)
+- [India GATE exam Recursion Coding Problems](#india-gate-exam-recursion-coding-problems)
+  - [2016 GATE problem](#2016-gate-problem)
+  - [2020 GATE problem](#2020-gate-problem)
+- [Bitwise operation in JavaScript](#bitwise-operation-in-javascript)
+  - [Right Shift x>>y](#right-shift-xy)
+  - [Left Shift x<<y](#left-shift-xy)
+- [Time Complexity](#time-complexity)
+- [Arrays](#arrays)
+  - [How to find the address of 1 dimensional array to do random access?](#how-to-find-the-address-of-1-dimensional-array-to-do-random-access)
+  - [How to find the address of any index in Row-Major Order Array?](#how-to-find-the-address-of-any-index-in-row-major-order-array)
+  - [What is the address of any index in Column-Major Order Array?](#what-is-the-address-of-any-index-in-column-major-order-array)
+  - [Array Interview Questions](#array-interview-questions)
 
 ## You have 17 yrs of full stack coding experience still solve School level DS & Algorithm problems!
 
@@ -172,7 +200,7 @@ Moving bit/s towards the left side in binary number.
 
 Within a `1 second` normally `10^8` loop can run. If your solution is trying to run more than 10^8 loops within a second. You need to optimize your solution to bring it within a range.
 
-## Array Basic Problems
+## Arrays
 
 ### How to find the address of 1 dimensional array to do random access?
 
