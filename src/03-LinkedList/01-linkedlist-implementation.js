@@ -69,6 +69,37 @@ class LinkedList {
     return head;
   }
 
+  reverse(head) {
+    if (head == null) return head;
+    let previous = null;
+    let current = head;
+    while (current) {
+      let next = current.next;
+      current.next = previous;
+      previous = current;
+      current = next;
+    }
+
+    head = previous;
+
+    return head;
+    /*
+1,2,3
+
+1->2->3
+1->null
+3->2->1->null
+
+p   c   n 
+0   100 200
+100 200 300
+200 300  0
+300 0    0 
+*/
+  }
+
+
+
   read(head) {
     const result = [];
     if (head == null) return result;
@@ -142,6 +173,36 @@ describe('@LinkedList', () => {
       head = linkedList.delete(head, 3); // Delete 3 element
 
       expect(linkedList.read(head)).toEqual([1, 2]);
+      var end = performance.now();
+      console.log('Problem #2', end - start);
+    });
+  });
+  describe('Can reverse', () => {
+    it('Problem #1', () => {
+      var start = performance.now();
+      let linkedList = new LinkedList();
+      let head = null;
+      head = linkedList.insert(head, 2, 0);
+      head = linkedList.insert(head, 1, 1);
+      head = linkedList.insert(head, 3, 2);
+      head = linkedList.reverse(head);
+      expect(linkedList.read(head)).toEqual([3, 2, 1]);
+      var end = performance.now();
+      console.log('Problem #2', end - start);
+    });
+  });
+  describe('Can reverse in group', () => {
+    it('Problem #1', () => {
+      var start = performance.now();
+      let linkedList = new LinkedList();
+      let head = null;
+      head = linkedList.insert(head, 20, 0);
+      head = linkedList.insert(head, 10, 1);
+      head = linkedList.insert(head, 30, 2);
+      head = linkedList.insert(head, 40, 3);
+      head = linkedList.insert(head, 50, 4);
+      
+      expect(linkedList.read(head)).toEqual([3, 2, 1]);
       var end = performance.now();
       console.log('Problem #2', end - start);
     });
