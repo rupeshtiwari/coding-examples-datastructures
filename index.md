@@ -27,6 +27,7 @@
   - [How to find the address of any index in Row-Major Order Array?](#how-to-find-the-address-of-any-index-in-row-major-order-array)
   - [What is the address of any index in Column-Major Order Array?](#what-is-the-address-of-any-index-in-column-major-order-array)
   - [Array Interview Questions](#array-interview-questions)
+- [Linked List](#linked-list)
 
 ## You have 17 yrs of full stack coding experience still solve School level DS & Algorithm problems!
 
@@ -242,3 +243,15 @@ Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
 | [Majority Element](src/02-Array/06-majority-element-in-array.js)  | Moore's Algorithm                                                                                                                                    |
 | [Chocolate Problem](src/02-Array/07-chocolate-problem.js)         | Sort the array, then find min difference between first and last package.                                                                             |
 | [Rain Water Harvesting](src/02-Array/08-rain-water-harvesting.js) | Create Max size building array from left, create max size building array from right, at any building do (Min(left,right) - Size_of_Current Building) |
+
+## Linked List
+
+Time complexity Table for [LinkedList](./src/03-LinkedList/01-linkedlist-implementation.js):
+
+| Operation                   | LinkedList | Array |
+| --------------------------- | ---------- | ----- |
+| Traversing                  | O(n)       | O(n)  |
+| Insert at the beginning     | O(1)       | O(n)  |
+| Insert at specific position | O(n)       | O(n)  |
+| Deleting first element      | O(1)       | O(n)  |
+| Deleting specific position  | O(n        | O(n)  |
