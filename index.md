@@ -202,6 +202,12 @@ Moving bit/s towards the left side in binary number.
 
 Within a `1 second` normally `10^8` loop can run. If your solution is trying to run more than 10^8 loops within a second. You need to optimize your solution to bring it within a range.
 
+
+
+
+Let's solve data-structure interview questions. [Here is the link](https://docs.google.com/spreadsheets/d/12A9lyHufsTEr6IEGiOvOBjG-rl7MhlTeJbeC-kj_0yY/edit#gid=717025630) of data-structure questions and their logic to revise or recap.
+
+
 ## Arrays
 
 ### How to find the address of 1 dimensional array to do random access?
@@ -256,7 +262,6 @@ Time complexity Table for [LinkedList](./src/03-LinkedList/01-linkedlist-impleme
 | Insert at specific position | O(n)       | O(n)  |
 | Deleting first element      | O(1)       | O(n)  |
 | Deleting specific position  | O(n        | O(n)  |
-
 
 ### Reverse Linked List in Group
 
