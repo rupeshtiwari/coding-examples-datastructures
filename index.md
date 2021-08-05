@@ -238,7 +238,7 @@ Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
 
 ### Array Interview Questions
 
-[Important array problems](./src/02-Array/01-reverse-array.js)
+[Important array problems](https://github.com/rupeshtiwari/coding-examples-datastructures/tree/main/src/02-Array)
 
 | problem                                                           | logic                                                                                                                                                |
 | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -253,7 +253,7 @@ Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
 
 ## Linked List
 
-Time complexity Table for [LinkedList](./src/03-LinkedList/01-linkedlist-implementation.js):
+Time complexity Table for [LinkedList](https://github.com/rupeshtiwari/coding-examples-datastructures/tree/main/src/03-LinkedList)
 
 | Operation                   | LinkedList | Array |
 | --------------------------- | ---------- | ----- |
@@ -266,3 +266,5 @@ Time complexity Table for [LinkedList](./src/03-LinkedList/01-linkedlist-impleme
 ### Reverse Linked List in Group
 
 ![](https://i.imgur.com/vQqxV67.png)
+
+
