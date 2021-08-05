@@ -98,13 +98,75 @@ p   c   n
 */
   }
 
+  /**
+   * 10-20-30-40-50
+   * 20-10-40-30-50
+   * @param {node} head
+   * @param {number} size
+   */
+  reverseInGroup(head, size) {
+    let current = head;
+    let previous = null;
+    let k = 0;
+    let next;
 
+    while (current && k < size) {
+      next = current.next;
+      current.next = previous;
+      previous = current;
+      current = next;
+      k++;
+    }
+
+    if (next != null) {
+      head.next = this.reverseInGroup(next, size);
+    }
+
+    return previous;
+  }
+  // Tricky remember this
+  /** Medium
+   * https://practice.geeksforgeeks.org/problems/rotate-a-linked-list/1
+   * @param {node} head
+   * @param {number} k
+   * @returns head
+   */
+  rotateByKNodes(head, k) {
+    let count = 1;
+    let kthNode = head;
+    let size = 1;
+    let lastNode = head;
+    while (lastNode.next) {
+      size++;
+      lastNode = lastNode.next;
+    }
+
+    k = k % size;
+    if (k == 0) return head;
+
+    while (kthNode.next && count < k) {
+      kthNode = kthNode.next;
+      count++;
+    }
+
+    let next = kthNode.next;
+
+    // Linked list is already rotated.
+    if (!next) return head;
+
+    kthNode.next = null;
+    lastNode.next = head;
+    head = next;
+
+    return head;
+  }
 
   read(head) {
     const result = [];
     if (head == null) return result;
     let current = head;
     result.push(current.data);
+
     while (current.next) {
       current = current.next;
       result.push(current.data);
@@ -188,7 +250,7 @@ describe('@LinkedList', () => {
       head = linkedList.reverse(head);
       expect(linkedList.read(head)).toEqual([3, 2, 1]);
       var end = performance.now();
-      console.log('Problem #2', end - start);
+      console.log('Problem #1', end - start);
     });
   });
   describe('Can reverse in group', () => {
@@ -201,10 +263,56 @@ describe('@LinkedList', () => {
       head = linkedList.insert(head, 30, 2);
       head = linkedList.insert(head, 40, 3);
       head = linkedList.insert(head, 50, 4);
-      
-      expect(linkedList.read(head)).toEqual([3, 2, 1]);
+      head = linkedList.reverseInGroup(head, 2);
+
+      expect(linkedList.read(head)).toEqual([20, 10, 40, 30, 50]);
+      var end = performance.now();
+      console.log('Problem #1', end - start);
+    });
+  });
+  describe('Can rotate by k nodes', () => {
+    it('Problem #1', () => {
+      var start = performance.now();
+      let linkedList = new LinkedList();
+      let head = null;
+      head = linkedList.insert(head, 20, 0);
+      head = linkedList.insert(head, 10, 1);
+      head = linkedList.insert(head, 30, 2);
+      head = linkedList.insert(head, 40, 3);
+      head = linkedList.insert(head, 50, 4);
+      head = linkedList.rotateByKNodes(head, 2);
+
+      expect(linkedList.read(head)).toEqual([30, 40, 50, 10, 20]);
+      var end = performance.now();
+      console.log('Problem #1', end - start);
+    });
+    it('Problem #2', () => {
+      var start = performance.now();
+      let linkedList = new LinkedList();
+      let head = null;
+      head = linkedList.insert(head, 12, 0);
+      head = linkedList.insert(head, 20, 1);
+      head = linkedList.insert(head, 19, 2);
+      head = linkedList.insert(head, 22, 3);
+      head = linkedList.rotateByKNodes(head, 2);
+
+      expect(linkedList.read(head)).toEqual([19, 22, 20, 12]);
       var end = performance.now();
       console.log('Problem #2', end - start);
+    });
+    it('Problem #3', () => {
+      var start = performance.now();
+      let linkedList = new LinkedList();
+      let head = null;
+      head = linkedList.insert(head, 12, 0);
+      head = linkedList.insert(head, 20, 1);
+      head = linkedList.insert(head, 19, 2);
+      head = linkedList.insert(head, 22, 3);
+      head = linkedList.rotateByKNodes(head, 4);
+
+      expect(linkedList.read(head)).toEqual([20, 12, 19, 22]);
+      var end = performance.now();
+      console.log('Problem #3', end - start);
     });
   });
 });

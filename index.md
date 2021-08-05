@@ -28,6 +28,7 @@
   - [What is the address of any index in Column-Major Order Array?](#what-is-the-address-of-any-index-in-column-major-order-array)
   - [Array Interview Questions](#array-interview-questions)
 - [Linked List](#linked-list)
+  - [Reverse Linked List in Group](#reverse-linked-list-in-group)
 
 ## You have 17 yrs of full stack coding experience still solve School level DS & Algorithm problems!
 
@@ -255,3 +256,8 @@ Time complexity Table for [LinkedList](./src/03-LinkedList/01-linkedlist-impleme
 | Insert at specific position | O(n)       | O(n)  |
 | Deleting first element      | O(1)       | O(n)  |
 | Deleting specific position  | O(n        | O(n)  |
+
+
+### Reverse Linked List in Group
+
+![](https://i.imgur.com/vQqxV67.png)
