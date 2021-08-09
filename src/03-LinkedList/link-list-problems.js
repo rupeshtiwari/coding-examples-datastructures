@@ -124,6 +124,7 @@ p   c   n
 
     return previous;
   }
+
   // Tricky remember this
   /** Medium
    * https://practice.geeksforgeeks.org/problems/rotate-a-linked-list/1
@@ -159,6 +160,40 @@ p   c   n
     head = next;
 
     return head;
+  }
+
+  /**
+   * https://practice.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1
+   * within 1 loop you must find the middle node.
+   * @param {ref} head
+   * @returns
+   */
+  middle(head) {
+    let fast = head;
+    let slow = head;
+
+    while (fast && fast.next) {
+      fast = fast.next.next;
+      slow = slow.next;
+    }
+
+    return slow.data;
+  }
+
+  kthNodefromEnd(head, k) {
+    let fast = head;
+    let slow = head;
+    for (let i = 0; i < k; i++) {
+      if (!fast) return -1; // if k is more than the size of the list returning -1;
+      fast = fast.next;
+    }
+
+    while (fast) {
+      slow = slow.next;
+      fast = fast.next;
+    }
+
+    return slow.data;
   }
 
   read(head) {
@@ -313,6 +348,98 @@ describe('@LinkedList', () => {
       expect(linkedList.read(head)).toEqual([20, 12, 19, 22]);
       var end = performance.now();
       console.log('Problem #3', end - start);
+    });
+  });
+
+  describe('Can find Middle', () => {
+    it('Problem #1', () => {
+      var start = performance.now();
+      let linkedList = new LinkedList();
+      let head = null;
+      head = linkedList.insert(head, 20, 0);
+      head = linkedList.insert(head, 10, 1);
+      head = linkedList.insert(head, 30, 2);
+      head = linkedList.insert(head, 40, 3);
+      head = linkedList.insert(head, 50, 4);
+      let middle = linkedList.middle(head);
+
+      expect(middle).toEqual(30);
+      var end = performance.now();
+      console.log('Problem #1', end - start);
+    });
+    it('Problem #2', () => {
+      var start = performance.now();
+      let linkedList = new LinkedList();
+      let head = null;
+      head = linkedList.insert(head, 12, 0);
+      head = linkedList.insert(head, 20, 1);
+      head = linkedList.insert(head, 19, 2);
+      head = linkedList.insert(head, 22, 3);
+      let middle = linkedList.middle(head);
+
+      expect(middle).toEqual(19);
+      var end = performance.now();
+      console.log('Problem #2', end - start);
+    });
+  });
+
+  describe('Can Kth node from End', () => {
+    it('Problem #1', () => {
+      var start = performance.now();
+      let linkedList = new LinkedList();
+      let head = null;
+      head = linkedList.insert(head, 20, 0);
+      head = linkedList.insert(head, 10, 1);
+      head = linkedList.insert(head, 30, 2);
+      head = linkedList.insert(head, 40, 3);
+      head = linkedList.insert(head, 50, 4);
+      let node = linkedList.kthNodefromEnd(head, 3);
+
+      expect(node).toEqual(30);
+      var end = performance.now();
+      console.log('Problem #1', end - start);
+    });
+    it('Problem #2', () => {
+      var start = performance.now();
+      let linkedList = new LinkedList();
+      let head = null;
+      head = linkedList.insert(head, 12, 0);
+      head = linkedList.insert(head, 20, 1);
+      head = linkedList.insert(head, 19, 2);
+      head = linkedList.insert(head, 22, 3);
+      let node = linkedList.kthNodefromEnd(head, 2);
+
+      expect(node).toEqual(19);
+      var end = performance.now();
+      console.log('Problem #2', end - start);
+    });
+    it('Problem #3', () => {
+      var start = performance.now();
+      let linkedList = new LinkedList();
+      let head = null;
+      head = linkedList.insert(head, 12, 0);
+      head = linkedList.insert(head, 20, 1);
+      head = linkedList.insert(head, 19, 2);
+      head = linkedList.insert(head, 22, 3);
+      let node = linkedList.kthNodefromEnd(head, 4);
+
+      expect(node).toEqual(20);
+      var end = performance.now();
+      console.log('Problem #3', end - start);
+    });
+    it('Problem #4', () => {
+      var start = performance.now();
+      let linkedList = new LinkedList();
+      let head = null;
+      head = linkedList.insert(head, 12, 0);
+      head = linkedList.insert(head, 20, 1);
+      head = linkedList.insert(head, 19, 2);
+      head = linkedList.insert(head, 22, 3);
+      let node = linkedList.kthNodefromEnd(head, 88);
+
+      expect(node).toEqual(-1);
+      var end = performance.now();
+      console.log('Problem #4', end - start);
     });
   });
 });
