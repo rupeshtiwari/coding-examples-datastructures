@@ -18,22 +18,22 @@ class MajorityElement {
     return isMajority(candidate) ? candidate : -1;
 
     function findCandidate() {
-      let majorityIndex = 0;
+      let majorityIdx = 0;
       let count = 1;
       for (let i = 1; i < n; i++) {
-        if (array[majorityIndex] === array[i]) {
+        if (array[majorityIdx] === array[i]) {
           count++;
         } else {
           count--;
         }
 
         if (count === 0) {
-          majorityIndex = i;
+          majorityIdx = i;
           count = 1;
         }
       }
 
-      return array[majorityIndex];
+      return array[majorityIdx];
     }
 
     function isMajority(candiate) {

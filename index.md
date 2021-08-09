@@ -28,7 +28,7 @@
   - [What is the address of any index in Column-Major Order Array?](#what-is-the-address-of-any-index-in-column-major-order-array)
   - [Array Interview Questions](#array-interview-questions)
 - [Linked List](#linked-list)
-  - [Reverse Linked List in Group](#reverse-linked-list-in-group)
+- [Learned Algorithms while solving Data Structures](#learned-algorithms-while-solving-data-structures)
 
 ## You have 17 yrs of full stack coding experience still solve School level DS & Algorithm problems!
 
@@ -253,9 +253,9 @@ Converting 3x3 Matrix in Row-Major Order Array, below is the diagram:
 
 ## Linked List
 
-Time complexity Table for [LinkedList](https://github.com/rupeshtiwari/coding-examples-datastructures/tree/main/src/03-LinkedList)
+Time complexity Table for [Linked List](https://github.com/rupeshtiwari/coding-examples-datastructures/tree/main/src/03-LinkedList)
 
-| Operation                   | LinkedList | Array |
+| Operation                   | Linked List | Array |
 | --------------------------- | ---------- | ----- |
 | Traversing                  | O(n)       | O(n)  |
 | Insert at the beginning     | O(1)       | O(n)  |
@@ -263,8 +263,10 @@ Time complexity Table for [LinkedList](https://github.com/rupeshtiwari/coding-ex
 | Deleting first element      | O(1)       | O(n)  |
 | Deleting specific position  | O(n        | O(n)  |
 
-### Reverse Linked List in Group
 
-![](https://i.imgur.com/vQqxV67.png)
+## Learned Algorithms while solving Data Structures
 
 
+- Kadane's Algorithm
+- Moore's Voting Algorithm
+- Floyd's Cycle Algorithm

@@ -196,6 +196,41 @@ p   c   n
     return slow.data;
   }
 
+  /**
+   * https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1
+   *
+   * Floyd Cycle Detection Algorithm
+   * @param {reference} head
+   */
+  removeLoop(head) {
+    let slow = head;
+    let fast = head;
+
+    if (head.next == null || head.next.next == null) return -1;
+
+    while (slow != null && fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
+      if (slow == fast) {
+        break;
+      }
+    }
+
+    if (slow == head) {
+      while (fast.next != slow) {
+        fast = fast.next;
+      }
+      fast.next = null;
+    } else if (slow == fast) {
+      slow = head;
+      while (slow.next != fast.next) {
+        slow = slow.next;
+        fast = fast.next;
+      }
+      fast.next = null;
+    }
+  }
+
   read(head) {
     const result = [];
     if (head == null) return result;
