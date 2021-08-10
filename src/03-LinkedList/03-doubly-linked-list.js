@@ -48,7 +48,7 @@ class DoublyLinkedList {
   }
 }
 
-class LinkListNode {
+class DoublyLinkListNode {
   constructor(data) {
     this.data = data;
     this.next = null;

@@ -53,7 +53,7 @@ class CircularLinkedList {
   }
 }
 
-class LinkListNode {
+class CircularLinkListNode {
   constructor(data) {
     this.data = data;
     this.next = null;

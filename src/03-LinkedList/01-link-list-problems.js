@@ -231,6 +231,30 @@ p   c   n
     }
   }
 
+  /**
+   * Gate 2005 question
+   * @param {head} head
+   * @returns
+   */
+  rearrange(head) {
+    let p, q, temp;
+
+    if (!head || !head.next) return head;
+
+    p = head;
+    q = head.next;
+
+    while (q) {
+      temp = p.data;
+      p.data = q.data;
+      q.data = temp;
+      p = q.next;
+      q = p ? p.next : null;
+    }
+
+    return head;
+  }
+
   read(head) {
     const result = [];
     if (head == null) return result;
@@ -243,59 +267,6 @@ p   c   n
     }
 
     return result;
-  }
-
-  insertAtEndOfCircularLinkedList(head, data) {
-    let newNode = new LinkListNode(data);
-    if (!head) return newNode;
-
-    let current = head;
-    while (current.next != head) {
-      current = current.next;
-    }
-    newNode.next = head;
-    current.next = newNode;
-
-    return head;
-  }
-
-  insertAtBeginingOfCircularLinkedList(head, data) {
-    let newNode = new LinkListNode(data);
-    if (!head) return newNode;
-
-    let current = head;
-    while (current.next != head) {
-      current = current.next;
-    }
-    newNode.next = head;
-    current.next = newNode;
-    head = newNode; // repoint your head to newNode.
-
-    return head;
-  }
-
-  deleteLastNodeOfCircularLinkedList(head) {
-    let current = head;
-    let previous = null;
-    while (current.next != head) {
-      previous = current;
-      current = current.next;
-    }
-    previous.next = head;
-    current = null;
-
-    return head;
-  }
-
-  deleteFirstNodeOfCircularLinkedList(head) {
-    let current = head;
-    while (current.next != head) {
-      current = current.next;
-    }
-    current.next = head.next;
-    head = current.next;
-
-    return head;
   }
 }
 
@@ -526,6 +497,23 @@ describe('@LinkedList', () => {
       expect(node).toEqual(-1);
       var end = performance.now();
       console.log('Problem #4', end - start);
+    });
+  });
+  describe('Can Rearrange', () => {
+    it('Problem #1', () => {
+      var start = performance.now();
+      let linkedList = new LinkedList();
+      let head = null;
+      head = linkedList.insert(head, 20, 0);
+      head = linkedList.insert(head, 10, 1);
+      head = linkedList.insert(head, 30, 2);
+      head = linkedList.insert(head, 40, 3);
+      head = linkedList.insert(head, 50, 4);
+      head = linkedList.rearrange(head, 2);
+
+      expect(linkedList.read(head)).toEqual([20, 10, 40, 30, 50]);
+      var end = performance.now();
+      console.log('Problem #1', end - start);
     });
   });
 });
