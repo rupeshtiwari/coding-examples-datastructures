@@ -244,6 +244,59 @@ p   c   n
 
     return result;
   }
+
+  insertAtEndOfCircularLinkedList(head, data) {
+    let newNode = new LinkListNode(data);
+    if (!head) return newNode;
+
+    let current = head;
+    while (current.next != head) {
+      current = current.next;
+    }
+    newNode.next = head;
+    current.next = newNode;
+
+    return head;
+  }
+
+  insertAtBeginingOfCircularLinkedList(head, data) {
+    let newNode = new LinkListNode(data);
+    if (!head) return newNode;
+
+    let current = head;
+    while (current.next != head) {
+      current = current.next;
+    }
+    newNode.next = head;
+    current.next = newNode;
+    head = newNode; // repoint your head to newNode.
+
+    return head;
+  }
+
+  deleteLastNodeOfCircularLinkedList(head) {
+    let current = head;
+    let previous = null;
+    while (current.next != head) {
+      previous = current;
+      current = current.next;
+    }
+    previous.next = head;
+    current = null;
+
+    return head;
+  }
+
+  deleteFirstNodeOfCircularLinkedList(head) {
+    let current = head;
+    while (current.next != head) {
+      current = current.next;
+    }
+    current.next = head.next;
+    head = current.next;
+
+    return head;
+  }
 }
 
 class LinkListNode {
@@ -385,7 +438,6 @@ describe('@LinkedList', () => {
       console.log('Problem #3', end - start);
     });
   });
-
   describe('Can find Middle', () => {
     it('Problem #1', () => {
       var start = performance.now();
@@ -417,7 +469,6 @@ describe('@LinkedList', () => {
       console.log('Problem #2', end - start);
     });
   });
-
   describe('Can Kth node from End', () => {
     it('Problem #1', () => {
       var start = performance.now();
