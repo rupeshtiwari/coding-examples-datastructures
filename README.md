@@ -20,6 +20,7 @@ I am using Karma and Jasmin to run the project.
 copy _draft/spec.template.js src/02-array/08-rain-water-harvesting.js
 ```
 
+📣 I have followed [Academic Booster Channel](https://www.youtube.com/watch?v=t5JfBFfi2sU&list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb&index=2) to learn and code his examples in JavaScript. His playlist on datastructure algorithm is excellent I recommend everyone to go through it. 
 
 Thanks, 
 Rupesh Tiwari
